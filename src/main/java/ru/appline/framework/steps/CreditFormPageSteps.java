@@ -5,13 +5,14 @@ import ru.appline.framework.pages.CreditFormPage;
 import ru.appline.framework.util.AllureUtils;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import static org.junit.Assert.assertTrue;
 
 public class CreditFormPageSteps {
 
     @Step("заполняются поля")
-    public CreditFormPageSteps fillFields(HashMap<String, String> fields) {
+    public CreditFormPageSteps fillFields(Map<String, String> fields) {
         fields.forEach(this::fillField);
         return this;
     }
@@ -38,7 +39,7 @@ public class CreditFormPageSteps {
     }
 
     @Step("выполнена проверка заполнения полей:")
-    public CreditFormPageSteps checkFilledFields(HashMap<String, String> fields) {
+    public CreditFormPageSteps checkFilledFields(Map<String, String> fields) {
         fields.forEach(this::checkFilledField);
         return this;
     }

@@ -1,16 +1,14 @@
 package ru.appline.framework;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import ru.appline.framework.pages.CreditPage;
 import ru.appline.framework.steps.BaseSteps;
 import ru.appline.framework.steps.CreditFormPageSteps;
 import ru.appline.framework.steps.CreditPageSteps;
 import ru.appline.framework.steps.MainPageSteps;
 
 import java.util.HashMap;
-
-import static org.junit.Assert.assertEquals;
 
 public class AllureTest {
 
@@ -47,9 +45,8 @@ public class AllureTest {
                 }});
     }
 
-
-    /*@After
+    @After
     public void tearDown(){
         BaseSteps.tearDown();
-    }*/
+    }
 }
