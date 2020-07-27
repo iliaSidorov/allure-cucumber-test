@@ -51,7 +51,6 @@ public class CreditFormPageSteps {
         assertTrue(String.format("The value of the field %s equals %s. Expected - %s", field, actual, value),
                 actual.equals(value));
 
-        AllureUtils.addScreenshot();
     }
 
 

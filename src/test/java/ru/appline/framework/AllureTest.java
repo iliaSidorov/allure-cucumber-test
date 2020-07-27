@@ -10,6 +10,8 @@ import ru.appline.framework.steps.MainPageSteps;
 
 import java.util.HashMap;
 
+import static ru.appline.framework.util.AllureUtils.addScreenshot;
+
 public class AllureTest {
 
     private MainPageSteps mainPageSteps = new MainPageSteps();
@@ -47,6 +49,7 @@ public class AllureTest {
 
     @After
     public void tearDown(){
+        addScreenshot();
         BaseSteps.tearDown();
     }
 }
