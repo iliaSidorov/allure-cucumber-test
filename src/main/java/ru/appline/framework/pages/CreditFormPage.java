@@ -76,7 +76,7 @@ public class CreditFormPage extends BasePage {
 
     public String getFilledField(String fieldName) {
         try {
-            Thread.sleep(1000);
+            Thread.sleep(4000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
