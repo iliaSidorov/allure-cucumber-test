@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Run test') {
             steps {
-                withMaven(maven: 'maven_3.6.3') {
+                withMaven(jdk: 'java_13', maven: 'maven_3.6.3') {
                     bat 'mvn test -Dcucumber.filter.tags="${TAG}" -Dmaven.test.failure.ignore-true'
                 }
             }
